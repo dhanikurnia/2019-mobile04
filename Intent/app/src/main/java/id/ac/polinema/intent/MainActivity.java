@@ -15,16 +15,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleExplicitIntent(View view) {
-        Intent intent = new Intent(this, ExplicitIntentActivity.class);
+
+        Intent intent =  new Intent(this, ExplicitIntentActivity.class);
         startActivity(intent);
     }
 
     public void handleExit(View view) {
-        finish(); ;
+        finish();
     }
 
     public void handleImplicitIntent(View view) {
-        Intent intent = new Intent(this,ImplicitIntentActivity.class);
+        Intent intent = new Intent(this, ImplicitIntentActivity.class);
+        startActivity(intent);
+    }
+
+    public void handleBundle(View view) {
+        Intent intent = new Intent(this, BundleActivity.class);
+        startActivity(intent);
+    }
+
+    public void parcelClick(View view) {
+        Intent intent = new Intent(this, ParcelableActivity.class);
         startActivity(intent);
     }
 }

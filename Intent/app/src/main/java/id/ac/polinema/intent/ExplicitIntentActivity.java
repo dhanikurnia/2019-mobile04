@@ -10,7 +10,6 @@ import android.widget.TextView;
 public class ExplicitIntentActivity extends AppCompatActivity {
     EditText input_name;
     TextView text_output;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +18,7 @@ public class ExplicitIntentActivity extends AppCompatActivity {
         text_output = findViewById(R.id.text_output);
     }
 
-    public void GetData(View view) {
+    public void handleGetData(View view) {
         text_output.setText(input_name.getText().toString());
     }
 }
